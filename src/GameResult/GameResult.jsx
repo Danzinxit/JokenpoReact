@@ -1,10 +1,13 @@
 import React from 'react';
-import { FaHandRock, FaHandPaper, FaHandScissors } from 'react-icons/fa';
+import maoFechada from "/mao-fechada.png"
+import maoAberta from "/mao-aberta.png"
+import maoTesoura from "/mao-tesouras.png"
 
 const choiceIcons = {
-  pedra: <FaHandRock size={50} />,
-  papel: <FaHandPaper size={50} />,
-  tesoura: <FaHandScissors size={50} />
+ 
+pedra: <img src={maoFechada} width={50}/>,
+papel: <img src={maoAberta} width={50}/>,
+tesoura: <img src={maoTesoura} width={50}/>
 };
 
 const GameResult = ({ playerChoice, computerChoice, winner, onPlayAgain }) => (
